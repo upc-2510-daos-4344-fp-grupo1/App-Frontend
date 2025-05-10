@@ -1,1 +1,31 @@
+<mat-toolbar color="primary" class="navbar">
+  <div class="logo-section">
+    <img src="assets/Logo-light.png" alt="Logo" height="300" width="300" />
+  </div>
 
+  <span class="spacer"></span>
+
+  <nav class="menu-items">
+    <a mat-button routerLink="/home">Home</a>
+    <a mat-button routerLink="/teams">Teams</a>
+    <a mat-button routerLink="/tasks">Tasks</a>
+    <a mat-button routerLink="/incidents">Incidents</a>
+    <a mat-button routerLink="/support">Support</a>
+  </nav>
+
+  <button mat-icon-button [matMenuTriggerFor]="profileMenu">
+    <img src="https://i.pravatar.cc/30" class="avatar" alt="User" />
+  </button>
+
+  <mat-menu #profileMenu="matMenu" class="profile-menu">
+    <div class="menu-header">
+      <strong>Company Name</strong><br />
+      <span>User Name</span>
+    </div>
+    <mat-divider></mat-divider>
+    <button mat-menu-item><mat-icon>person</mat-icon> Profile</button>
+    <button mat-menu-item><mat-icon>business</mat-icon> Company profile</button>
+    <button mat-menu-item><mat-icon>settings</mat-icon> Settings</button>
+    <button mat-menu-item><mat-icon>logout</mat-icon> Logout</button>
+  </mat-menu>
+</mat-toolbar>
