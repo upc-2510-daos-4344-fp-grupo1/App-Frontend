@@ -27,6 +27,9 @@
 .form-card {
   padding: 20px;
   width: 400px;
+  background-color: #FCFAF9;
+  border-color: black;
+  border-width: 1px;
 }
 
 .form-field {
@@ -44,4 +47,6 @@
   font-size: 12px;
   padding: 4px 12px;
   height: 30px;
+  background-color: #F5AF00;
+  border-radius:5px;
 }
