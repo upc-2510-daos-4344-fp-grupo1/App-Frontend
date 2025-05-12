@@ -1,0 +1,47 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.profile-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.profile-card {
+  width: 220px;
+  text-align: center;
+}
+
+.profile-card img {
+  max-height: 160px;
+  object-fit: contain;
+  padding: 12px;
+}
+
+.form-card {
+  padding: 20px;
+  width: 400px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button {
+  font-size: 12px;
+  padding: 4px 12px;
+  height: 30px;
+}

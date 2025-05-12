@@ -1,0 +1,67 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background-color: #f9f9f9; 
+}
+
+.profile-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.profile-card {
+  width: 250px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .username {
+    margin-top: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+
+  .fullname {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 0;
+  }
+
+  .member-since {
+    color: #777;
+    font-size: 14px;
+  }
+}
+
+.form-card {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button {
+  font-size: 12px;
+  padding: 4px 12px;
+  min-width: auto;
+  height: 30px;
+  line-height: 1;
+}
