@@ -1,3 +1,10 @@
+h1 {
+  margin: 50px;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+
 .page-container {
   display: flex;
   justify-content: center;
@@ -14,19 +21,21 @@
 }
 
 .profile-card {
-  width: 220px;
+  width: 300px;
   text-align: center;
 }
 
 .profile-card img {
   max-height: 160px;
+  margin-left: 15px;
+  margin-top: 15px;
   object-fit: contain;
   padding: 12px;
 }
 
 .form-card {
   padding: 20px;
-  width: 400px;
+  width: 700px;
   background-color: #FCFAF9;
   border-color: black;
   border-width: 1px;
@@ -46,7 +55,8 @@
 .edit-button {
   font-size: 12px;
   padding: 4px 12px;
-  height: 30px;
+  min-width: 80px;
+  height: 40px;
   background-color: #F5AF00;
   border-radius:5px;
 }
