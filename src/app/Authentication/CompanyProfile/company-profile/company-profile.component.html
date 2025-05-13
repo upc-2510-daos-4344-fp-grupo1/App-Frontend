@@ -1,0 +1,50 @@
+<div class="page-container">
+  <div class="profile-container">
+    
+    <!-- Card de empresa -->
+    <mat-card class="profile-card">
+      <img mat-card-image src="https://www.logogenio.es/icons/preview/11398" alt="Company logo">
+      <mat-card-content>
+        <p class="ruc">RUC Number</p>
+        <p class="company-name"><strong>Full company name</strong></p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Formulario -->
+    <mat-card class="form-card">
+      <form [formGroup]="companyForm">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Full company name</mat-label>
+          <input matInput formControlName="companyName">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Persona jurídica</mat-label>
+          <input matInput formControlName="legalType">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>RUC Number</mat-label>
+          <input matInput formControlName="rucNumber">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Sector</mat-label>
+          <input matInput formControlName="sector">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Person in charge</mat-label>
+          <input matInput formControlName="personInCharge">
+        </mat-form-field>
+      </form>
+
+      <div class="button-container">
+        <button mat-button color="primary" class="edit-button" (click)="toggleEdit()">
+          {{ companyForm.disabled ? 'Editar' : 'Guardar' }}
+        </button>
+      </div>
+    </mat-card>
+
+  </div>
+</div>
