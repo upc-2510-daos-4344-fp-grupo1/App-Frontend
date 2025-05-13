@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>Configuración de Notificaciones</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="notificationsForm">
+      <mat-checkbox formControlName="email">Notificaciones por correo electrónico</mat-checkbox><br>
+      <mat-checkbox formControlName="sms">Notificaciones por SMS</mat-checkbox>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="saveSettings()">Guardar Configuración</button>
+  </mat-card-actions>
+</mat-card>
