@@ -1,26 +1,20 @@
 h1 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 47%;
 }
-
-.login-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.login-card {
+.custom-card {
   padding: 20px;
   width: 400px;
   text-align: center;
   background-color: #FCFAF9;
   border-width: 1px;
   border-color: black;
-}
-
-.actions-container{
-  display: flex;
-  justify-content: center;
 }
