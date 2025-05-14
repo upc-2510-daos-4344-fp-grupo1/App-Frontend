@@ -1,4 +1,17 @@
 import { Routes } from '@angular/router';
+
+import {SupportComponent} from './public/components/support/support.component';
+
+export const routes: Routes = [
+  {
+    path: 'support',
+    component: SupportComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
+  },
+
 import { CompanyProfileComponent } from './Authentication/CompanyProfile/company-profile/company-profile.component';
 import { ProfileComponent } from './Authentication/Profile/profile/profile.component';
 import { LoginComponent } from './Authentication/Login/login/login.component';
@@ -32,4 +45,5 @@ export const routes: Routes = [
         path: 'info',
         component: InformationComponent
     }
+
 ];
