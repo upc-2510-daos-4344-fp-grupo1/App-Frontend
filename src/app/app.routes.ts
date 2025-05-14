@@ -1,30 +1,16 @@
 import { Routes } from '@angular/router';
-
 import {SupportComponent} from './public/components/support/support.component';
-
-export const routes: Routes = [
-  {
-    path: 'support',
-    component: SupportComponent,
-  },
-  {
-    path: '**',
-    redirectTo: '',
-  },
-
 import { CompanyProfileComponent } from './Authentication/CompanyProfile/company-profile/company-profile.component';
 import { ProfileComponent } from './Authentication/Profile/profile/profile.component';
 import { LoginComponent } from './Authentication/Login/login/login.component';
 import { RegisterComponent } from './Authentication/Register/register/register.component';
 import { InformationComponent } from './Authentication/Information/information/information.component';
 
-
 export const routes: Routes = [
-    {
-        path:'',
-        redirectTo:'login',
-        pathMatch:'full'
-    },
+  {
+    path: 'support',
+    component: SupportComponent,
+  },
     {
         path: 'company',
         component: CompanyProfileComponent
@@ -44,6 +30,6 @@ export const routes: Routes = [
     {
         path: 'info',
         component: InformationComponent
-    }
-
+    },
 ];
+

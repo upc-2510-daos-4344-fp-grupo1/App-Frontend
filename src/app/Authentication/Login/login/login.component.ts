@@ -5,7 +5,6 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
-import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -18,7 +17,6 @@ import { RouterLink } from '@angular/router';
     ReactiveFormsModule,
     MatTabsModule,
     MatButtonModule,
-    RouterLink
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
