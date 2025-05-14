@@ -1,0 +1,51 @@
+
+<div class="page-container">
+  <h1>Profile</h1>
+  <div class="profile-container">
+    <!-- Tarjeta de perfil -->
+    <mat-card class="profile-card">
+      <img mat-card-image src="https://www.vivecer.com.mx/img/supervision-vertical.jpg" alt="Profile photo">
+      <mat-card-content>
+        <p class="username">Username</p>
+        <p class="fullname"><strong>Full name</strong></p>
+        <p class="member-since">Member since 2025</p>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Formulario -->
+    <mat-card class="form-card">
+      <form [formGroup]="profileForm">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Full name</mat-label>
+          <input matInput formControlName="fullName">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>ID Type</mat-label>
+          <input matInput formControlName="idType">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>ID Number</mat-label>
+          <input matInput formControlName="idNumber">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Phone number</mat-label>
+          <input matInput formControlName="phoneNumber">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Email address</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+      </form>
+
+      <div class="button-container">
+        <button mat-button color="primary" class="edit-button" (click)="toggleEdit()">
+          {{ profileForm.disabled ? 'Editar' : 'Guardar' }}
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>
