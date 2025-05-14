@@ -1,0 +1,62 @@
+h1 {
+  margin: 50px;
+  position: absolute;
+  top: 20%;
+  left: 28%;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.profile-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.profile-card {
+  width: 300px;
+  text-align: center;
+}
+
+.profile-card img {
+  max-height: 160px;
+  margin-left: 15px;
+  margin-top: 15px;
+  object-fit: contain;
+  padding: 12px;
+}
+
+.form-card {
+  padding: 20px;
+  width: 700px;
+  background-color: #FCFAF9;
+  border-color: black;
+  border-width: 1px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button {
+  font-size: 12px;
+  padding: 4px 12px;
+  min-width: 80px;
+  height: 40px;
+  background-color: #F5AF00;
+  border-radius:5px;
+}

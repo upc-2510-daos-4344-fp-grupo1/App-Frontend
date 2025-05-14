@@ -1,0 +1,21 @@
+h1 {
+  position: absolute;
+  top: 27%;
+  left: 47%;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.register-card {
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  background-color: #FCFAF9;
+  border-width: 1px;
+  border-color: black;
+}
